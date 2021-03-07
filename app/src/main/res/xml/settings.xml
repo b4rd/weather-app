@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="api_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="API key" />
+    <hu.simplexion.weather.ui.settings.IntListPreference
+        android:defaultValue="1"
+        android:entries="@array/refresh_intervals"
+        android:entryValues="@array/refresh_intervals"
+        android:key="refresh_interval"
+        android:title="Refresh interval" />
+</PreferenceScreen>
